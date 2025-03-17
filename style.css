@@ -1,0 +1,132 @@
+body{
+    background-color:#1c1c1c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+}
+#containers{
+    background-color: #1c1c1c;
+ 
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    max-height: 84px;
+    background-color: #333333;
+   
+}
+#navTXT{
+    color: #b02a37;
+    font-size: 1.3rem;
+}
+.dropdown-item{
+    background-color:#333333 ;
+}
+#dropTXT{
+    color: #b02a37;
+    
+}
+#dropTXT:hover{
+    color:#e04958 ;
+    background-color:#160507;
+}
+#navTXT:hover{
+    color:#e04958 ;
+}
+#webTITLE{
+flex: 2;
+text-align: center;
+margin-right: 130px;
+color: #b02a37;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-self: center;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    margin-top:30px ;
+  
+}
+.contentBOX{
+    background-color: lightgreen;
+    width: 20%;
+    height: 50%;
+}
+.card:hover{
+    box-shadow: 10px 15px 5px #9a2530;
+    position: relative;
+    bottom: 10px;
+}
+.card:active{
+    box-shadow: 10px 15px 3px #a43b45;
+   
+}
+.card-body{
+    background-color:#333333;
+    color:#b02a37 ;
+}
+
+.card-title{
+   color:#DC3545;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   min-height: 40px;
+   color:#b02a37 ;
+}
+.ftTXT{
+    margin-top: 10px;
+}
+/*-----------------MEDIDIA QUERY------------------*/
+/*------------MOBIE-----------------------*/
+@media (min-width:375px) and (max-width:844px){
+    body{
+     min-width: 435px;
+    }
+    h1{
+      text-align: center;
+    }
+    #webTITLE{
+        visibility: hidden;
+        display: none;
+    }
+ .card-body{
+    text-align: center;
+ }
+   #srch{
+    display: none;
+    visibility: hidden;
+   }
+   #cardBTN{
+    align-self: center;
+    width: auto;
+   }
+   footer{
+ width: 108vw;
+   }
+}
+
+
+@media (min-width:845px) and (max-width:1034px){
+    #webTITLE{
+        visibility: hidden;
+        display: none;
+    }
+
+    #srch{
+        display: none;
+        visibility: hidden;
+       }
+}

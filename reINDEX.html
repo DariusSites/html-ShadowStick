@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-------------------CSSS STYLE-------------------->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #1c1c1c ; 
+        }
+        nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    max-height: 84px;
+    background-color: #333333;
+   
+}
+#navTXT{
+    color: #b02a37;
+    font-size: 1.3rem;
+}
+.dropdown-item{
+    background-color:#333333;
+}
+#dropTXT{
+    color: #b02a37;
+    
+}
+#dropTXT:hover{
+    color:#e04958 ;
+    background-color:#160507;
+}
+#navTXT:hover{
+    color:#e04958 ;
+}
+#webTITLE{
+flex: 2;
+text-align: center;
+margin-right: 130px;
+color: #b02a37;
+}
+        main{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid red ;
+            width: 100%;
+            height: auto;
+        }
+        header{
+            padding: 20px;
+            box-shadow: 15px 15px 15px #421015;
+        }
+        section{
+        display: flex;
+        flex-direction: row;
+         align-items: center;
+        align-self: center;
+        width: 70%;
+        height:auto;
+        max-height: 800px;
+        margin-top: 40px;
+        }
+        .slides{
+            width: 100%;
+            max-height: 400px;
+        }
+       #vid{
+        margin-left: 188px;
+       }
+        article{
+            align-self: center;
+            width: 70%;
+            margin-top: 20px;
+            color: #DC3545;
+        }
+        footer{
+            margin-top: 10px;
+            text-align: center;
+            color: #b02a37;
+        }
+        /*-----------------MEDIAQUERY-----------------*/
+        @media (min-width:390px) and (max-width:844px){
+          section{
+            display: flex;
+            max-height:240.663px;
+            overflow: hidden;
+          }
+
+        #carouselExample{
+            min-width: 789px;
+        min-height: 444px;
+        }
+          #vid{
+        margin-left: -20px;
+        margin-top: 106px;
+        height: 246px;
+        width: 349px;
+
+          }
+          #summary{
+            max-width: 349px;
+            min-height: 144px;
+          }
+          #ew1{
+           height: 20em;
+           object-fit: cover;
+          }
+          #prev{
+            position: absolute;
+            left: -41px;
+          }
+          #next{
+            position: absolute;
+            left: 245px;
+          }
+        }
+    </style>
+    <!-------------------CSSS STYLE-------------------->
+    <main>
+        <!------------NAV------------------>
+        <nav id="containers">
+          <nav class="navbar navbar-expand-lg" id="navFDrop"  style="position: relative; ">
+             
+              <div class="container-fluid" style="z-index: 2000;">
+                  <a class="navbar-brand" href="#">
+                      <svg style="    min-width: 75px; margin-bottom:10px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                          <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                        </svg>
+                  </a>
+                <button class="navbar-toggler"   style="background-color:  #777777;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav  mb-2 mb-lg-0" style="background: #333333; margin-left: -11px;">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="navTXT" aria-current="page" href="index.html">News</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" id="navTXT" href="#">Eras</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navTXT" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PlatForms
+                      </a>
+
+                      <ul class="dropdown-menu" style="background-color: #333333 ;">
+                        <li><a  id="dropTXT" class="dropdown-item" href="#">Xbox Series X</a></li>
+                        <li><a  id="dropTXT" class="dropdown-item" href="#">Nintendo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a  id="dropTXT"  class="dropdown-item" href="#">PS5</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" id="navTXT"  aria-disabled="true">Guides</a>
+                    </li>
+
+                  </ul>
+                  <h1 id="webTITLE">ShadowStick</h1>
+                  <form class="d-flex" role="search" id="srch">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      </nav>
+
+<!-----------------------------------------------------CONTENT------------------------------------------>
+<header>
+    <h1 style="color: #DC3545;"> Resident Evil Village Trailer | Resident Evil Showcase</h1>
+        <p style="color:#b02a37 ;">  Apr 15, 2021  by GameSpot</p>
+        <h3 style="color:#b02a37 ;">"Fear Runs Through These Streets."</h3>
+    </header>
+        <section>
+            <div id="carouselExample" class="carousel slide" style="display: flex; width: 100%;  max-height: 452.8px;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" >
+                    <iframe id="vid" width="789" height="444" src="https://www.youtube.com/embed/tjfTxFzGh3Q" title="Resident Evil Village Trailer  | Resident Evil Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+
+                  <div class="carousel-item" style="max-height: 600px;" >
+                    <img id="ew1" src="./resident evil content/RE1.jpg" class="d-block w-100" alt=" resident evil pic 1">
+                  </div>
+                  <div class="carousel-item" style="max-height: 600px;">
+                    <img tyle="object-fit: cover;" src="./resident evil content/RE2.webp" class="d-block w-100" alt="resident evil pic 2">
+                  </div>
+                </div>
+                <button id="prev" style="transition: none;" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="min-height: 52px; align-self: center;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="next" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"b style="min-height: 52px; align-self: center;" >
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <article>
+            <p id="summary" style="font-size: 1.1rem; box-shadow: 15px 15px 15px #421015; background-color:#333333;">
+            Resident Evil Village is a survival horror game that follows a man’s desperate journey to a mysterious, snow-covered
+             village filled with dark secrets and terrifying creatures. As he searches for answers, he must fight to survive against 
+             relentless threats while exploring eerie locations and uncovering the truth behind the nightmare. Blending intense action,
+              atmospheric horror, and gripping storytelling, Resident Evil Village delivers a chilling and immersive experience.
+
+            </p>
+        </article>
+        <footer id="containers">
+            <p class="ftTXT">"© 2025 Darius Arrington | @DariusSites | All Rights Reserved"</p>
+    </footer>
+    </main>
+ 
+</body>
+</html>
